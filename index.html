@@ -1,567 +1,949 @@
 <!DOCTYPE html>
 <html lang="sk">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Imports -->
+    <link rel="shortcut icon" href="./obr/css-logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Title -->
+    <title>Ako na responzívne stránky - Bootstrap stránka</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Js -->
+    <script defer src="./js/main.js"></script>
+    <script defer src="js/bootstrap.js"></script>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+  </head>
 
-<head>
-  <!-- Meta -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Imports -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <!-- Title -->
-  <title>Css - bootstrap website</title>
-  <!-- Css -->
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <!-- Js -->
-  <script defer src="./js/main.js"></script>
-  <script defer src="js/bootstrap.js"></script>
-  <script defer src="js/bootstrap.bundle.min.js"></script>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="./obr/css-logo.png" alt="css logo" style="height: 4rem;"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link text-primary active" aria-current="page" href="#uvod">Úvod</a>
-          <a class="nav-link text-primary" href="#zakladne-principy">Základné princípy</a>
-          <a class="nav-link  text-primary" href="#ako-na-to">Ako na to</a>
-          <a class="nav-link  text-primary" href="#nastroje-a-technologie">Nástroje a technológie</a>
-          <a class="nav-link  text-primary" href="#tipy-a-triky">Tipy a triky</a>
-          <a class="nav-link  text-primary" href="#info">Info</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <header data-bs-spy="scroll" data-bs-smooth-scroll="true" tabindex="0">
-    <section class="hlavny-nazov bg-primary mb-5">
-      <h1 style="padding: 12rem 1rem;" class="text-light text-center text-uppercase display-3">
-        Responzívna stránka
-      </h1>
-    </section>
-    <section class="carousel-container mb-5">
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixelmechanics.com.sg%2Fgeneral%2Fcss-guide-for-beginners&psig=AOvVaw1hQQkkpu_XR3ytk4O1JO0E&ust=1705872238321000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLi1krrz7IMDFQAAAAAdAAAAABAD -->
-              <img src="./obr/carousel-1.jpeg" class="d-block w-100 mx-auto" alt="carousel obrazok">
-            </div>
-            <div class="carousel-item">
-              <!-- https://www.freecodecamp.org/news/responsive-design-best-practices/ -->
-              <img src="./obr/carousel-2.jpeg" class="d-block w-100 mx-auto" alt="carousel obrazok">
-            </div>
-            <div class="carousel-item">
-              <!-- https://www.toptal.com/designers/responsive/responsive-design-best-practices -->
-              <img src="./obr/carousel-3.jpeg" class="d-block w-100 mx-auto" alt="carousel obrazok">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section id="uvod" class="uvod-text bg--clr-primary-1 text-light mb-5">
-      <div class="container py-5">
-        <h1 class="h1 text-uppercase display-3 text-center">Úvod</h1>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 p-3">
-            <p>&#128511; Táto stránka je venovaná tvorbe responzívnych webových stránok. Tu nájdete
-              všetko čo
-              potrebujete na
-              vytvorenie
-              jednoduchej responzívnej stránke, ktorá sa šikovne prispôsobuje rôznym zariadeniam. V dnešnej dobe, kedy
-              sa
-              používatelia pohybujú medzi počítačmi, tabletmi a mobilnými telefónmi, je nevyhnutné mať stránku, ktorá
-              ponúka
-              konzistentný a užívateľsky prívetivý zážitok bez ohľadu na veľkosť obrazovky.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 p-3">
-            <p>&#128511; V tomto sprievodcovi nebudeme len zdieľať kľúčové princípy responzívneho
-              dizajnu, ale
-              aj vám poskytneme
-              praktické
-              návody, tipy a triky, ktoré vám pomôžu krok za krokom vytvárať moderné a prispôsobivé webové stránky. Od
-              výberu
-              vhodných nástrojov a frameworkov cez navrhovanie flexibilných mriežok až po ladenie a testovanie na
-              rôznych
-              zariadeniach - náš cieľ je uľahčiť vám proces tvorby responzívnych stránok a zvýšiť ich efektivitu.</p>
-          </div>
-          <div class="col-lg-4 col-md-12 p-3">
-            <p>&#128511; Nech sa teda pustíme do sveta responzívneho dizajnu a spoločne objavíme
-              kroky, ktoré
-              vám pomôžu vytvoriť
-              stránky,
-              ktoré budú nielen vizuálne príťažlivé, ale aj funkčné na každom zariadení. Sme tu, aby sme vás viedli od
-              začiatku
-              až po koniec tejto cesty, takže si pripravte svoje nápady a buďte pripravení vytvoriť responzívny priestor
-              pre
-              váš
-              online obsah.</p>
+        <a class="navbar-brand" href="#"
+          ><img src="./obr/css-logo.png" alt="css logo" style="height: 4rem"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link text-primary active"
+              aria-current="page"
+              href="#uvod"
+              >Úvod</a
+            >
+            <a class="nav-link text-primary" href="#zakladne-principy"
+              >Základné princípy</a
+            >
+            <a class="nav-link text-primary" href="#ako-na-to">Ako na to</a>
+            <a class="nav-link text-primary" href="#nastroje-a-technologie"
+              >Nástroje a technológie</a
+            >
+            <a class="nav-link text-primary" href="#tipy-a-triky"
+              >Tipy a triky</a
+            >
+            <a class="nav-link text-primary" href="#info">Info</a>
           </div>
         </div>
       </div>
-    </section>
-  </header>
+    </nav>
 
-  <main data-bs-spy="scroll" data-bs-smooth-scroll="true" tabindex="0">
-    <section id="zakladne-principy" class="bg--clr-primary-2 text-light mb-5">
-      <div class="container py-5">
-        <h1 class="h1 text-uppercase display-3 text-center">Základné princípy</h1>
-        <p class="text-center mx-auto py-3" style="max-width: 60ch;">
-          Základné princípy responzívneho dizajnu sú neoddeliteľné od vytvárania moderných a prispôsobivých webových
-          stránok. Tu sú kľúčové zásady, ktoré by ste mali brať do úvahy pri tvorbe responzívnej stránky:</p>
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">1. Flexibilné mriežky a kontajnery:</div>
-                <ul>
-                  <li>Používanie flexibilných mriežok umožňuje prispôsobenie obsahu rôznym veľkostiam obrazoviek. To
-                    znamená, že jednotlivé časti stránky môžu zaberávať rôzny počet stĺpcov alebo riadkov v závislosti
-                    od dostupného priestoru.</li>
-                </ul>
+    <header data-bs-spy="scroll" data-bs-smooth-scroll="true" tabindex="0">
+      <section class="hlavny-nazov bg-primary mb-5">
+        <h1
+          style="padding: 12rem 1rem"
+          class="text-light text-center text-uppercase display-3"
+        >
+          Responzívna stránka
+        </h1>
+      </section>
+      <section class="carousel-container mb-5">
+        <div class="container">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixelmechanics.com.sg%2Fgeneral%2Fcss-guide-for-beginners&psig=AOvVaw1hQQkkpu_XR3ytk4O1JO0E&ust=1705872238321000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLi1krrz7IMDFQAAAAAdAAAAABAD -->
+                <img
+                  src="./obr/carousel-1.jpeg"
+                  class="d-block w-100 mx-auto"
+                  alt="carousel obrazok"
+                />
               </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">2. Relatívne jednotky namiesto pevných:</div>
-                <ul>
-                  <li>Preferujte relatívne jednotky ako percentá namiesto pevných hodnôt, napríklad pixelov. To
-                    umožňuje, aby sa rozmiestnenie a veľkosť elementov prispôsobovali zmenám veľkosti obrazovky.</li>
-                </ul>
+              <div class="carousel-item">
+                <!-- https://www.freecodecamp.org/news/responsive-design-best-practices/ -->
+                <img
+                  src="./obr/carousel-2.jpeg"
+                  class="d-block w-100 mx-auto"
+                  alt="carousel obrazok"
+                />
               </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">3. Media queries:</div>
-                <ul>
-                  <li>Využívanie media queries umožňuje definovať rôzne štýly pre rôzne veľkosti obrazoviek. To
-                    zabezpečuje, že stránka bude optimalizovaná pre zobrazenie na desktopoch, tabletách a mobilných
-                    zariadeniach.</li>
-                </ul>
+              <div class="carousel-item">
+                <!-- https://www.toptal.com/designers/responsive/responsive-design-best-practices -->
+                <img
+                  src="./obr/carousel-3.jpeg"
+                  class="d-block w-100 mx-auto"
+                  alt="carousel obrazok"
+                />
               </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">4. Obrázky s responzívnymi vlastnosťami:</div>
-                <ul>
-                  <li>Používanie responzívnych obrázkov s rôznymi verziami pre rôzne zariadenia a veľkosti obrazoviek.
-                    To zabezpečuje, že sa obrázky automaticky prispôsobia dostupnému miestu na obrazovke.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">5. Typografia a fluidné rozmiestnenie:</div>
-                <ul>
-                  <li>Nastavenie fluidného rozmiestnenia textu a iných prvkov umožňuje ich prispôsobenie šírke
-                    obrazovky. Typografia by mala byť čitateľná na rôznych veľkostiach zariadení.</li>
-                </ul>
-              </div>
-            </li>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">6. Optimalizácia pre dotykové zariadenia:</div>
-                <ul>
-                  <li>Zabezpečte, aby interakcie boli prispôsobené pre dotykové zariadenia, čo zahŕňa dostatočne veľké
-                    tlačidlá a interaktívne prvky pre pohodlné používanie na mobilných zariadeniach.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">7. Testovanie na rôznych zariadeniach:</div>
-                <ul>
-                  <li>Pravidelné testovanie na rôznych zariadeniach a v rôznych prehliadačoch je kľúčové pre overenie
-                    konzistencie a funkcionality responzívneho dizajnu.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">8. Postupné nahradzovanie (Progressive Enhancement):</div>
-                <ul>
-                  <li>Postupné nahradzovanie je princíp, kde sa stránka začína s jednoduchým základným obsahom a
-                    postupne sa pridávajú pokročilejšie funkcie pre zariadenia s väčšími možnosťami.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">9. Optimalizácia na rýchle načítavanie:</div>
-                <ul>
-                  <li>Minimalizácia súborov a optimalizácia obrázkov na rýchle načítavanie sú kritické pre používateľský
-                    zážitok, najmä na mobilných zariadeniach s obmedzenou šírkou pásma.</li>
-                </ul>
-              </div>
-            </li>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <p class="text-center mx-auto py-3" style="max-width: 60ch;">
-          Tieto zásady tvoria pevný základ pre vytvorenie responzívnych webových stránok, ktoré poskytujú optimálny
-          zážitok pre používateľov na rôznych zariadeniach.</p>
-      </div>
-    </section>
-    <section id="ako-na-to" class="bg--clr-primary-3 text-light mb-5">
-      <div class="container py-5">
-        <h1 class="h1 text-uppercase display-3 text-center">Ako na to</h1>
-        <p class="text-center mx-auto py-3" style="max-width: 60ch;">
-          Tvorba responzívnej webovej stránky môže byť pomerne jednoduchá, ak dodržíte niekoľko základných krokov. Tu je
-          postup, ako na to:</p>
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">1. Plánovanie:</div>
-                <ul>
-                  <li>Definujte ciele svojej stránky a identifikujte cieľovú skupinu.
-                  </li>
-                  <li>
-                    Navrhnite wireframe alebo náčrt stránky s ohľadom na responzívny dizajn.
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">2. Výber nástrojov a frameworkov:</div>
-                <ul>
-                  <li>Zvoľte si vhodný CSS framework ako Bootstrap alebo Foundation, ktorý vám uľahčí implementáciu
-                    responzívneho dizajnu.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">3. Flexibilné mriežky a kontajnery:</div>
-                <ul>
-                  <li>Implementujte flexibilné mriežky a kontajnery pomocou CSS flexboxu alebo gridu.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">4. Relatívne jednotky:</div>
-                <ul>
-                  <li>Používajte relatívne jednotky ako percentá, rem a em namiesto pevných hodnôt.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">5. Media queries:</div>
-                <ul>
-                  <li>Vytvorte media queries na prispôsobenie štýlov pre rôzne veľkosti obrazoviek.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">6. Optimalizácia obrázkov:</div>
-                <ul>
-                  <li>Optimalizujte obrázky a používajte responzívne obrázky s atribútom srcset. </li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">7. Typografia a fluidné rozmiestnenie:</div>
-                <ul>
-                  <li>Nastavte fluidné rozmiestnenie pre text a ďalšie prvky.</li>
-                </ul>
-              </div>
-            </li>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">8. Optimalizácia pre dotykové zariadenia:</div>
-                <ul>
-                  <li>Zabezpečte, aby boli interakcie prispôsobené pre dotykové zariadenia.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">9. Testovanie na rôznych zariadeniach:</div>
-                <ul>
-                  <li>Pravidelne testujte stránku na desktopoch, tabletoch a mobiloch, aby ste overili, že je
-                    responzívna a konzistentná.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">10. Postupné nahradzovanie:</div>
-                <ul>
-                  <li>Začnite s jednoduchým obsahom a postupne pridávajte pokročilejšie funkcie pre zariadenia s väčšími
-                    možnosťami.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">11. Optimalizácia na rýchle načítavanie:</div>
-                <ul>
-                  <li>Minimalizujte súbory a optimalizujte ich na rýchle načítavanie.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">12. Dokumentácia:</div>
-                <ul>
-                  <li>Vytvorte dokumentáciu pre váš kód a nastavenie, aby ste uľahčili budúce úpravy a údržbu.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">13. Testovanie a ladenie:</div>
-                <ul>
-                  <li>Starostlivo testujte stránku na rôznych prehliadačoch a overte, či je všetko v poriadku.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">14. Publikovanie:</div>
-                <ul>
-                  <li>Po úspešnom teste publikujte svoju responzívnu stránku.</li>
-                </ul>
-              </div>
-            </li>
+      </section>
+      <section id="uvod" class="uvod-text bg--clr-primary-1 text-light mb-5">
+        <div class="container py-5">
+          <h1 class="h1 text-uppercase display-3 text-center">Úvod</h1>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 p-3">
+              <p>
+                &#128511; Táto stránka je venovaná tvorbe responzívnych webových
+                stránok. Tu nájdete všetko čo potrebujete na vytvorenie
+                jednoduchej responzívnej stránke, ktorá sa šikovne prispôsobuje
+                rôznym zariadeniam. V dnešnej dobe, kedy sa používatelia
+                pohybujú medzi počítačmi, tabletmi a mobilnými telefónmi, je
+                nevyhnutné mať stránku, ktorá ponúka konzistentný a užívateľsky
+                prívetivý zážitok bez ohľadu na veľkosť obrazovky.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 p-3">
+              <p>
+                &#128511; V tomto sprievodcovi nebudeme len zdieľať kľúčové
+                princípy responzívneho dizajnu, ale aj vám poskytneme praktické
+                návody, tipy a triky, ktoré vám pomôžu krok za krokom vytvárať
+                moderné a prispôsobivé webové stránky. Od výberu vhodných
+                nástrojov a frameworkov cez navrhovanie flexibilných mriežok až
+                po ladenie a testovanie na rôznych zariadeniach - náš cieľ je
+                uľahčiť vám proces tvorby responzívnych stránok a zvýšiť ich
+                efektivitu.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-12 p-3">
+              <p>
+                &#128511; Nech sa teda pustíme do sveta responzívneho dizajnu a
+                spoločne objavíme kroky, ktoré vám pomôžu vytvoriť stránky,
+                ktoré budú nielen vizuálne príťažlivé, ale aj funkčné na každom
+                zariadení. Sme tu, aby sme vás viedli od začiatku až po koniec
+                tejto cesty, takže si pripravte svoje nápady a buďte pripravení
+                vytvoriť responzívny priestor pre váš online obsah.
+              </p>
+            </div>
           </div>
         </div>
-        <p class="text-center mx-auto py-3" style="max-width: 60ch;">Týmto postupom by ste mali byť schopní vytvoriť
-          efektívnu responzívnu webovú stránku, ktorá poskytuje
-          optimálny zážitok pre rôzne typy zariadení. Nezabudnite pravidelne aktualizovať a testovať svoju stránku, aby
-          ste udržiavali jej výkon a funkčnosť v súlade so zmenami v technológiách a zariadeniach.</p>
-      </div>
-    </section>
-    <section id="nastroje-a-technologie" class="nastroje-a-technologie bg--clr-primary-2 text-light mb-5">
-      <div class="container py-5">
-        <h1 class="h1 text-uppercase display-3 text-center">Nástroje a technológie</h1>
-        <p class="text-center mx-auto py-3" style="max-width: 60ch;">
-          Pri tvorbe responzívnej stránky vám môžu pomôcť rôzne nástroje a technológie. Tu sú niektoré jednoduché
-          možnosti:</p>
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <ol>
-              <li class="p-3">CSS Frameworky:
-                <ul>
-                  <li>Bootstrap: Jednoduchý nástroj s predpripravenými štýlmi pre responzívny dizajn.</li>
-                  <li>Foundation: Flexibilný framework s mnohými možnosťami pre responzívne stránky.</li>
-                </ul>
-              </li>
-              <li class="p-3">Preprocesory CSS:
-                <ul>
-                  <li>Sass: Pomocník, ktorý vám umožňuje písať lepší a organizovanejší CSS kód.</li>
-                  <li>Less: Alternatíva k Sass s podobnými výhodami.</li>
-                </ul>
-              </li>
-              <li class="p-3">Grafické nástroje:
-                <ul>
-                  <li>Adobe XD: Umožňuje vám vytvárať jednoduché náčrty a dizajny stránky.</li>
-                  <li>Sketch: Pomocník pri dizajne s jednoduchým používateľským rozhraním.</li>
-                </ul>
-              </li class="p-3">
-              <li>Testovacie nástroje:
-                <ul>
-                  <li>BrowserStack: Slúži na testovanie stránok v rôznych prehliadačoch a zariadeniach.</li>
-                  <li>Chrome DevTools: Vstavaný nástroj v prehliadači Chrome pre testovanie a ladenie stránky.</li>
-                </ul>
-              </li>
-            </ol>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <img class="img-fluid p-5" src="./obr/bs-logo.png" alt="bootstrap logo">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="tipy-a-triky" class="bg--clr-primary-1 text-light mb-5">
-      <div class="container py-5">
-        <h1 class="h1 text-uppercase display-3 text-center">Tipy a triky</h1>
-        <p class="text-center mx-auto py-3" style="max-width: 60ch;">
-          Pri vytváraní responzívnej stránky je užitočné mať niekoľko tipov a trikov v zálohe, aby ste dosiahli
-          optimálny výsledok. Tu sú niektoré užitočné rady:</p>
-        <div class="row">
-          <table class="table table-light table-bordered border-primary">
-            <thead>
-              <tr>
-                <th style="width: 20%;" scope="col">tip / trik</th>
-                <th scope="col">vysvetlenie</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Prispôsobivé Menu</th>
-                <td>Vytvorte jednoduché a prispôsobivé menu, ktoré sa môže meniť podľa veľkosti obrazovky. Môžete zvážiť
-                  hamburger menu pre mobilné zariadenia.</td>
-              </tr>
-              <tr>
-                <th scope="row">Obrázky s Rôznymi Verziami</th>
-                <td>Používajte rôzne verzie obrázkov pre rôzne zariadenia a veľkosti obrazoviek. To zrýchli načítavanie
-                  stránky.</td>
-              </tr>
-              <tr>
-                <th scope="row">Zobrazovanie/Ukrytie Obsahu</th>
-                <td>Použite CSS a media queries na zobrazovanie alebo skrývanie niektorých častí obsahu na základe
-                  veľkosti obrazovky.</td>
-              </tr>
-              <tr>
-                <th scope="row">Fonty a Čitateľnosť</th>
-                <td>Vyberte vhodné fonty a udržujte dostatočnú veľkosť písma pre lepšiu čitateľnosť na rôznych
-                  zariadeniach.</td>
-              </tr>
-              <tr>
-                <th scope="row">Využite Flexbox a Grid</th>
-                <td>S využitím CSS flexboxu a gridu dosiahnete ľahké a flexibilné usporiadanie prvkov na stránke.</td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Viac tipov a trikov
-          </button>
-          <!-- Modal -->
-          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Tipy a triky</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </section>
+    </header>
+
+    <main data-bs-spy="scroll" data-bs-smooth-scroll="true" tabindex="0">
+      <section id="zakladne-principy" class="bg--clr-primary-2 text-light mb-5">
+        <div class="container py-5">
+          <h1 class="h1 text-uppercase display-3 text-center">
+            Základné princípy
+          </h1>
+          <p class="text-center mx-auto py-3" style="max-width: 60ch">
+            Základné princípy responzívneho dizajnu sú neoddeliteľné od
+            vytvárania moderných a prispôsobivých webových stránok. Tu sú
+            kľúčové zásady, ktoré by ste mali brať do úvahy pri tvorbe
+            responzívnej stránky:
+          </p>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">1. Flexibilné mriežky a kontajnery:</div>
+                  <ul>
+                    <li>
+                      Používanie flexibilných mriežok umožňuje prispôsobenie
+                      obsahu rôznym veľkostiam obrazoviek. To znamená, že
+                      jednotlivé časti stránky môžu zaberávať rôzny počet
+                      stĺpcov alebo riadkov v závislosti od dostupného
+                      priestoru.
+                    </li>
+                  </ul>
                 </div>
-                <div class="modal-body">
-                  <table class="table table-light table-bordered border-primary">
-                    <thead>
-                      <tr>
-                        <th style="width: 20%;" scope="col">tip / trik</th>
-                        <th scope="col">vysvetlenie</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <th scope="row">Optimalizácia Pre Rýchle Načítavanie</th>
-                      <td>Minimalizujte a komprimujte súbory, aby sa stránka rýchlo načítala, najmä na pomalších
-                        internetových
-                        pripojeniach.</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Zabezpečte, aby Boli Tlačidlá Dostatočne Veľké</th>
-                        <td>Urobte interaktívne prvky, ako tlačidlá, dostatočne veľkými pre pohodlné používanie na
-                          dotykových
-                          zariadeniach.</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> Prispôsobenie Videí</th>
-                        <td>Ak vložíte videá, uistite sa, že sú prispôsobené pre rôzne veľkosti obrazoviek a pripojenia.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Použite vhodné Hlavičky (Headings)</th>
-                        <td>Štruktúrujte obsah s použitím vhodných HTML hlavičiek, aby sa zlepšila dostupnosť a SEO.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Zachovajte Konzistentnosť Farieb a Štýlov</th>
-                        <td>Udržujte konzistentné farby a štýly na celej stránke pre profesionálny vzhľad.</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Skúšajte, Skúšajte a Skúšajte</th>
-                        <td>Pravidelne testujte svoju stránku na rôznych zariadeniach a prehliadačoch, aby ste
-                          zabezpečili
-                          konzistentný a funkčný zážitok.</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    2. Relatívne jednotky namiesto pevných:
+                  </div>
+                  <ul>
+                    <li>
+                      Preferujte relatívne jednotky ako percentá namiesto
+                      pevných hodnôt, napríklad pixelov. To umožňuje, aby sa
+                      rozmiestnenie a veľkosť elementov prispôsobovali zmenám
+                      veľkosti obrazovky.
+                    </li>
+                  </ul>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvoriť</button>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">3. Media queries:</div>
+                  <ul>
+                    <li>
+                      Využívanie media queries umožňuje definovať rôzne štýly
+                      pre rôzne veľkosti obrazoviek. To zabezpečuje, že stránka
+                      bude optimalizovaná pre zobrazenie na desktopoch,
+                      tabletách a mobilných zariadeniach.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    4. Obrázky s responzívnymi vlastnosťami:
+                  </div>
+                  <ul>
+                    <li>
+                      Používanie responzívnych obrázkov s rôznymi verziami pre
+                      rôzne zariadenia a veľkosti obrazoviek. To zabezpečuje, že
+                      sa obrázky automaticky prispôsobia dostupnému miestu na
+                      obrazovke.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    5. Typografia a fluidné rozmiestnenie:
+                  </div>
+                  <ul>
+                    <li>
+                      Nastavenie fluidného rozmiestnenia textu a iných prvkov
+                      umožňuje ich prispôsobenie šírke obrazovky. Typografia by
+                      mala byť čitateľná na rôznych veľkostiach zariadení.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    6. Optimalizácia pre dotykové zariadenia:
+                  </div>
+                  <ul>
+                    <li>
+                      Zabezpečte, aby interakcie boli prispôsobené pre dotykové
+                      zariadenia, čo zahŕňa dostatočne veľké tlačidlá a
+                      interaktívne prvky pre pohodlné používanie na mobilných
+                      zariadeniach.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    7. Testovanie na rôznych zariadeniach:
+                  </div>
+                  <ul>
+                    <li>
+                      Pravidelné testovanie na rôznych zariadeniach a v rôznych
+                      prehliadačoch je kľúčové pre overenie konzistencie a
+                      funkcionality responzívneho dizajnu.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    8. Postupné nahradzovanie (Progressive Enhancement):
+                  </div>
+                  <ul>
+                    <li>
+                      Postupné nahradzovanie je princíp, kde sa stránka začína s
+                      jednoduchým základným obsahom a postupne sa pridávajú
+                      pokročilejšie funkcie pre zariadenia s väčšími možnosťami.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    9. Optimalizácia na rýchle načítavanie:
+                  </div>
+                  <ul>
+                    <li>
+                      Minimalizácia súborov a optimalizácia obrázkov na rýchle
+                      načítavanie sú kritické pre používateľský zážitok, najmä
+                      na mobilných zariadeniach s obmedzenou šírkou pásma.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+          </div>
+          <p class="text-center mx-auto py-3" style="max-width: 60ch">
+            Tieto zásady tvoria pevný základ pre vytvorenie responzívnych
+            webových stránok, ktoré poskytujú optimálny zážitok pre používateľov
+            na rôznych zariadeniach.
+          </p>
+        </div>
+      </section>
+      <section id="ako-na-to" class="bg--clr-primary-3 text-light mb-5">
+        <div class="container py-5">
+          <h1 class="h1 text-uppercase display-3 text-center">Ako na to</h1>
+          <p class="text-center mx-auto py-3" style="max-width: 60ch">
+            Tvorba responzívnej webovej stránky môže byť pomerne jednoduchá, ak
+            dodržíte niekoľko základných krokov. Tu je postup, ako na to:
+          </p>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">1. Plánovanie:</div>
+                  <ul>
+                    <li>
+                      Definujte ciele svojej stránky a identifikujte cieľovú
+                      skupinu.
+                    </li>
+                    <li>
+                      Navrhnite wireframe alebo náčrt stránky s ohľadom na
+                      responzívny dizajn.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">2. Výber nástrojov a frameworkov:</div>
+                  <ul>
+                    <li>
+                      Zvoľte si vhodný CSS framework ako Bootstrap alebo
+                      Foundation, ktorý vám uľahčí implementáciu responzívneho
+                      dizajnu.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">3. Flexibilné mriežky a kontajnery:</div>
+                  <ul>
+                    <li>
+                      Implementujte flexibilné mriežky a kontajnery pomocou CSS
+                      flexboxu alebo gridu.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">4. Relatívne jednotky:</div>
+                  <ul>
+                    <li>
+                      Používajte relatívne jednotky ako percentá, rem a em
+                      namiesto pevných hodnôt.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">5. Media queries:</div>
+                  <ul>
+                    <li>
+                      Vytvorte media queries na prispôsobenie štýlov pre rôzne
+                      veľkosti obrazoviek.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">6. Optimalizácia obrázkov:</div>
+                  <ul>
+                    <li>
+                      Optimalizujte obrázky a používajte responzívne obrázky s
+                      atribútom srcset.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    7. Typografia a fluidné rozmiestnenie:
+                  </div>
+                  <ul>
+                    <li>
+                      Nastavte fluidné rozmiestnenie pre text a ďalšie prvky.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    8. Optimalizácia pre dotykové zariadenia:
+                  </div>
+                  <ul>
+                    <li>
+                      Zabezpečte, aby boli interakcie prispôsobené pre dotykové
+                      zariadenia.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    9. Testovanie na rôznych zariadeniach:
+                  </div>
+                  <ul>
+                    <li>
+                      Pravidelne testujte stránku na desktopoch, tabletoch a
+                      mobiloch, aby ste overili, že je responzívna a
+                      konzistentná.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">10. Postupné nahradzovanie:</div>
+                  <ul>
+                    <li>
+                      Začnite s jednoduchým obsahom a postupne pridávajte
+                      pokročilejšie funkcie pre zariadenia s väčšími možnosťami.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    11. Optimalizácia na rýchle načítavanie:
+                  </div>
+                  <ul>
+                    <li>
+                      Minimalizujte súbory a optimalizujte ich na rýchle
+                      načítavanie.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">12. Dokumentácia:</div>
+                  <ul>
+                    <li>
+                      Vytvorte dokumentáciu pre váš kód a nastavenie, aby ste
+                      uľahčili budúce úpravy a údržbu.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">13. Testovanie a ladenie:</div>
+                  <ul>
+                    <li>
+                      Starostlivo testujte stránku na rôznych prehliadačoch a
+                      overte, či je všetko v poriadku.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-start"
+              >
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">14. Publikovanie:</div>
+                  <ul>
+                    <li>
+                      Po úspešnom teste publikujte svoju responzívnu stránku.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+          </div>
+          <p class="text-center mx-auto py-3" style="max-width: 60ch">
+            Týmto postupom by ste mali byť schopní vytvoriť efektívnu
+            responzívnu webovú stránku, ktorá poskytuje optimálny zážitok pre
+            rôzne typy zariadení. Nezabudnite pravidelne aktualizovať a testovať
+            svoju stránku, aby ste udržiavali jej výkon a funkčnosť v súlade so
+            zmenami v technológiách a zariadeniach.
+          </p>
+        </div>
+      </section>
+      <section
+        id="nastroje-a-technologie"
+        class="nastroje-a-technologie bg--clr-primary-2 text-light mb-5"
+      >
+        <div class="container py-5">
+          <h1 class="h1 text-uppercase display-3 text-center">
+            Nástroje a technológie
+          </h1>
+          <p class="text-center mx-auto py-3" style="max-width: 60ch">
+            Pri tvorbe responzívnej stránky vám môžu pomôcť rôzne nástroje a
+            technológie. Tu sú niektoré jednoduché možnosti:
+          </p>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <ol>
+                <li class="p-3">
+                  CSS Frameworky:
+                  <ul>
+                    <li>
+                      Bootstrap: Jednoduchý nástroj s predpripravenými štýlmi
+                      pre responzívny dizajn.
+                    </li>
+                    <li>
+                      Foundation: Flexibilný framework s mnohými možnosťami pre
+                      responzívne stránky.
+                    </li>
+                  </ul>
+                </li>
+                <li class="p-3">
+                  Preprocesory CSS:
+                  <ul>
+                    <li>
+                      Sass: Pomocník, ktorý vám umožňuje písať lepší a
+                      organizovanejší CSS kód.
+                    </li>
+                    <li>Less: Alternatíva k Sass s podobnými výhodami.</li>
+                  </ul>
+                </li>
+                <li class="p-3">
+                  Grafické nástroje:
+                  <ul>
+                    <li>
+                      Adobe XD: Umožňuje vám vytvárať jednoduché náčrty a
+                      dizajny stránky.
+                    </li>
+                    <li>
+                      Sketch: Pomocník pri dizajne s jednoduchým používateľským
+                      rozhraním.
+                    </li>
+                  </ul>
+                </li>
+                <li class="p-3">
+                  Testovacie nástroje:
+                  <ul>
+                    <li>
+                      BrowserStack: Slúži na testovanie stránok v rôznych
+                      prehliadačoch a zariadeniach.
+                    </li>
+                    <li>
+                      Chrome DevTools: Vstavaný nástroj v prehliadači Chrome pre
+                      testovanie a ladenie stránky.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <img
+                class="img-fluid p-5"
+                src="./obr/bs-logo.png"
+                alt="bootstrap logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tipy-a-triky" class="bg--clr-primary-1 text-light mb-5">
+        <div class="container py-5">
+          <h1 class="h1 text-uppercase display-3 text-center">Tipy a triky</h1>
+          <p class="text-center mx-auto py-3" style="max-width: 60ch">
+            Pri vytváraní responzívnej stránky je užitočné mať niekoľko tipov a
+            trikov v zálohe, aby ste dosiahli optimálny výsledok. Tu sú niektoré
+            užitočné rady:
+          </p>
+          <div class="row">
+            <table class="table table-light table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th style="width: 20%" scope="col">tip / trik</th>
+                  <th scope="col">vysvetlenie</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Prispôsobivé Menu</th>
+                  <td>
+                    Vytvorte jednoduché a prispôsobivé menu, ktoré sa môže meniť
+                    podľa veľkosti obrazovky. Môžete zvážiť hamburger menu pre
+                    mobilné zariadenia.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Obrázky s Rôznymi Verziami</th>
+                  <td>
+                    Používajte rôzne verzie obrázkov pre rôzne zariadenia a
+                    veľkosti obrazoviek. To zrýchli načítavanie stránky.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Zobrazovanie/Ukrytie Obsahu</th>
+                  <td>
+                    Použite CSS a media queries na zobrazovanie alebo skrývanie
+                    niektorých častí obsahu na základe veľkosti obrazovky.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Fonty a Čitateľnosť</th>
+                  <td>
+                    Vyberte vhodné fonty a udržujte dostatočnú veľkosť písma pre
+                    lepšiu čitateľnosť na rôznych zariadeniach.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Využite Flexbox a Grid</th>
+                  <td>
+                    S využitím CSS flexboxu a gridu dosiahnete ľahké a
+                    flexibilné usporiadanie prvkov na stránke.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Viac tipov a trikov
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Tipy a triky
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <table
+                      class="table table-light table-bordered border-primary"
+                    >
+                      <thead>
+                        <tr>
+                          <th style="width: 20%" scope="col">tip / trik</th>
+                          <th scope="col">vysvetlenie</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            Optimalizácia Pre Rýchle Načítavanie
+                          </th>
+                          <td>
+                            Minimalizujte a komprimujte súbory, aby sa stránka
+                            rýchlo načítala, najmä na pomalších internetových
+                            pripojeniach.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            Zabezpečte, aby Boli Tlačidlá Dostatočne Veľké
+                          </th>
+                          <td>
+                            Urobte interaktívne prvky, ako tlačidlá, dostatočne
+                            veľkými pre pohodlné používanie na dotykových
+                            zariadeniach.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Prispôsobenie Videí</th>
+                          <td>
+                            Ak vložíte videá, uistite sa, že sú prispôsobené pre
+                            rôzne veľkosti obrazoviek a pripojenia.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            Použite vhodné Hlavičky (Headings)
+                          </th>
+                          <td>
+                            Štruktúrujte obsah s použitím vhodných HTML
+                            hlavičiek, aby sa zlepšila dostupnosť a SEO.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            Zachovajte Konzistentnosť Farieb a Štýlov
+                          </th>
+                          <td>
+                            Udržujte konzistentné farby a štýly na celej stránke
+                            pre profesionálny vzhľad.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Skúšajte, Skúšajte a Skúšajte</th>
+                          <td>
+                            Pravidelne testujte svoju stránku na rôznych
+                            zariadeniach a prehliadačoch, aby ste zabezpečili
+                            konzistentný a funkčný zážitok.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Zatvoriť
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+            <p class="text-center mx-auto py-3" style="max-width: 60ch">
+              Tieto tipy a triky vám pomôžu zvýšiť efektivitu pri tvorbe
+              responzívnych stránok a zabezpečia, že vaša stránka bude
+              atraktívna a funkčná na rôznych zariadeniach.
+            </p>
           </div>
-          <p class="text-center mx-auto py-3" style="max-width: 60ch;">Tieto tipy a triky vám pomôžu zvýšiť efektivitu
-            pri tvorbe responzívnych stránok a zabezpečia, že vaša stránka bude atraktívna a funkčná na rôznych
-            zariadeniach.</p>
         </div>
+      </section>
+    </main>
+
+    <footer
+      id="info"
+      class="bg-primary text-light"
+      data-bs-spy="scroll"
+      data-bs-smooth-scroll="true"
+      tabindex="0"
+    >
+      <div class="container py-5">
+        <div class="row">
+          <h1 class="text-uppercase display-5">Info</h1>
+          <div class="col-md-6">
+            <p>
+              &#128511; Táto stránka bola vytvorená pomocou CSS Framework-u
+              Bootstrap a s menšou pomocou CSS. Text bol vygenerovaný pomocou AI
+              systému ChatGPT.
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary m-1 border-light"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-content="Maj pekny deň!"
+            >
+              Klikni ma
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary m-1 border-light"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="right"
+              data-bs-content="Bootstrap je super!"
+            >
+              Klikni ma
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary m-1 border-light"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              data-bs-content="Milujem TWS!"
+            >
+              Klikni ma
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary m-1 border-light"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="left"
+              data-bs-content="Dobrú chuť!"
+            >
+              Klikni ma
+            </button>
+            <a
+              tabindex="0"
+              class="btn btn-lg btn-danger bg-primary border-light m-1"
+              role="button"
+              data-bs-toggle="popover"
+              data-bs-trigger="focus"
+              data-bs-title="― Bernard M. Baruch"
+              data-bs-content="“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.”"
+              >Dovidenia!</a
+            >
+          </div>
+          <div class="col-md-6">
+            <p>
+              &#128511; Na stránke boli použité bootstrap komponenty a bootstrap
+              classy:
+            </p>
+            <ul>
+              <li>navigácia</li>
+              <li>scrollspy</li>
+              <li>carousel</li>
+              <li>bootstrap grid system</li>
+              <li>taluľka</li>
+              <li>modal</li>
+              <li>popover</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center pt-5">
+          Stránku vytvoril A. Chlebovec 3.A, SPST SNV, 2024
+        </p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer id="info" class="bg-primary text-light" data-bs-spy="scroll" data-bs-smooth-scroll="true" tabindex="0">
-    <div class="container py-5">
-      <div class="row ">
-        <h1 class="text-uppercase display-5">Info</h1>
-        <div class="col-md-6">
-          <p>&#128511; Táto stránka bola vytvorená pomocou CSS Framework-u Bootstrap a s menšou pomocou CSS. Text bol
-            vygenerovaný pomocou AI systému ChatGPT.</p>
-          <button type="button" class="btn btn-primary m-1 border-light" data-bs-container="body"
-            data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Maj pekny deň!">
-            Klikni ma
-          </button>
-          <button type="button" class="btn btn-primary m-1 border-light" data-bs-container="body"
-            data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Bootstrap je super!">
-            Klikni ma
-          </button>
-          <button type="button" class="btn btn-primary m-1 border-light" data-bs-container="body"
-            data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Milujem TWS!">
-            Klikni ma
-          </button>
-          <button type="button" class="btn btn-primary m-1 border-light" data-bs-container="body"
-            data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Dobrú chuť!">
-            Klikni ma
-          </button>
-          <a tabindex="0" class="btn btn-lg btn-danger bg-primary border-light m-1" role="button"
-            data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="― Bernard M. Baruch"
-            data-bs-content="“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.”">Dovidenia!</a>
-        </div>
-        <div class="col-md-6">
-          <p>&#128511; Na stránke boli použité bootstrap komponenty a bootstrap classy:</p>
-          <ul>
-            <li>navigácia</li>
-            <li>scrollspy</li>
-            <li>carousel</li>
-            <li>bootstrap grid system</li>
-            <li>taluľka</li>
-            <li>modal</li>
-            <li>popover</li>
-          </ul>
-        </div>
-      </div>
-      <p class="text-center pt-5">Stránku vytvoril A. Chlebovec 3.A, SPST SNV, 2024</p>
-    </div>
-  </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
 
-  <script>
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-  </script>
-</body>
+      let isNavbarOpen = eval(navbarToggler.getAttribute("aria-expanded"));
+      let navInterval;
 
+      navbarToggler.addEventListener("click", () => {
+        isNavbarOpen = !isNavbarOpen;
+        if (isNavbarOpen && navInterval) clearInterval(navInterval);
+        navbarToggler.setAttribute("aria-expanded", isNavbarOpen);
+        if (!isNavbarOpen)
+          navInterval = setInterval(
+            () => navbarCollapse.classList.remove("show"),
+            10
+          );
+      });
+
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+  </body>
 </html>
